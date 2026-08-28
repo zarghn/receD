@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>receD</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-card">
+        <nav>
+          <div class="logo">rece<span>D</span></div>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#add">add</a></li>
+            <li><a href="#bookmarks">Bookmarks</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="accent-line"></div>
+            <h1>Delicious<br />Food is waiting<br />for you !</h1>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="img/header.png"
+              alt="Food Bowl"
+              class="rotating-bowl"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="eyebrow">The Most Popular</div>
+      <h2 class="section-title">OUR SERVICES</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">
+            <img src="img/food.png" alt="food" />
+          </div>
+          <h3>Explore Recipes</h3>
+          <p>
+            Search through thousands of recipes from all around the world,
+            filtered by ingredients, time, or category.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">
+            <img src="img/bookmark.png" alt="Bookmark" />
+          </div>
+          <h3>Save Your Favorites</h3>
+          <p>
+            Bookmark any recipe you love and access your personal collection
+            anytime, from any device.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">
+            <img src="img/pencil.png" alt="Add Recipe" />
+          </div>
+          <h3>Add New Recipe</h3>
+          <p>
+            Got a recipe worth sharing? Add your own creations and let others
+            discover your cooking.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="recipes">
+      <div class="eyebrow">THE MOST POPULAR</div>
+      <h2 class="section-title">RECIPES</h2>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search for over 10.000 recepise ..." />
+        <button type="submit" class="search-btn">
+          <img src="img/search.png" alt="Search" />
+        </button>
+      </div>
+
+      <div class="recipes-carousel-container">
+        <button class="nav-btn prev-btn" aria-label="Previous">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="recipes-cards">
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img1.jpg" alt="Recipe" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img2.jpg" alt="Recipe" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img3.jpg" alt="Recipe" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img4.jpg" alt="Recipe" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img5.jpg" alt="Recipe" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+        </div>
+
+        <button class="nav-btn next-btn" aria-label="Next">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section id="add">
+      <div class="eyebrow">THE MOST POPULAR</div>
+      <h2 class="section-title">ADD RECIPES</h2>
+
+      <form class="add-recipe-form">
+        <div class="form-grid">
+          <div class="form-column">
+            <div class="input-group">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>URL</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Image URL</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Publisher</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Prep time</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Servings</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="form-column">
+            <div class="input-group">
+              <label>Ingredient 1</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Ingredient 2</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Ingredient 3</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Ingredient 4</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Ingredient 5</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Ingredient 6</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button type="submit" class="upload-btn">UPLOAD RECEPIS</button>
+        </div>
+      </form>
+    </section>
+    <section id="bookmarks">
+      <img
+        src="img/fries.png"
+        class="bg-decoration fries-icon"
+        alt="fries decoration"
+      />
+      <img
+        src="img/chees.png"
+        class="bg-decoration chees-icon"
+        alt="cheese decoration"
+      />
+      <img
+        src="img/hamber.png"
+        class="bg-decoration hamber-icon"
+        alt="burger decoration"
+      />
+
+      <div class="eyebrow">SAVED FAVORITES</div>
+      <h2 class="section-title">BOOKMARKS</h2>
+
+      <div class="recipes-carousel-container">
+        <button class="nav-btn prev-btn" aria-label="Previous">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="recipes-cards">
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img1.jpg" alt="Bookmark" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img2.jpg" alt="Bookmark" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img3.jpg" alt="Bookmark" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img4.jpg" alt="Bookmark" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-img-wrapper">
+              <img src="img5.jpg" alt="Bookmark" />
+            </div>
+            <p class="recipe-title">
+              PIZZA BIANCO<br />WITH<br />ARTICHOKE<br />HEARTS
+            </p>
+          </div>
+        </div>
+
+        <button class="nav-btn next-btn" aria-label="Next">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-overlay">
+        <div class="eyebrow">THE MOST POPULAR</div>
+        <h2 class="section-title">CONTACT US</h2>
+
+        <form class="contact-form">
+          <div class="form-layout">
+            <div class="left-fields">
+              <div class="input-row">
+                <div class="field-group">
+                  <label>First Name</label>
+                  <input type="text" placeholder="John" />
+                </div>
+                <div class="field-group">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Doe" />
+                </div>
+              </div>
+
+              <div class="input-row">
+                <div class="field-group">
+                  <label>Email</label>
+                  <input type="email" />
+                </div>
+                <div class="field-group">
+                  <label>Subject</label>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+
+            <div class="right-fields">
+              <div class="field-group full-height">
+                <label>Message</label>
+                <textarea></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit-wrap">
+            <button type="submit" class="submit-btn">SUBMIT HERE</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <a href="#" class="footer-logo">rece<span>D</span></a>
+
+        <div class="footer-content">
+          <div class="footer-col links-col">
+            <h4>Links</h4>
+            <div class="links-subgrid">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Team</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-col desc-col">
+            <p>its time to cook anything togheather!</p>
+          </div>
+
+          <div class="footer-col subscribe-col">
+            <h4>Subscribe Us</h4>
+            <label>Enter Email</label>
+            <form class="subscribe-form" onsubmit="event.preventDefault()">
+              <input type="email" placeholder="email@domain.com" required />
+              <button type="submit">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2026 <span class="brand-text">rece<span>D</span></span
+            >, all design and develop by Zqr.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay hidden" id="recipeModal">
+      <div class="modal-card">
+        <button class="btn-close-modal">&times;</button>
+
+        <div class="modal-body">
+          <div class="modal-left">
+            <h3 class="modal-subtitle">RECIPE INGREDIENTS</h3>
+            <ul class="ingredients-list" id="modalIngredients"></ul>
+            <div class="modal-meta">
+              <div class="servings-control">
+                <button class="btn-tiny btn-decrease">-</button>
+                <button class="btn-tiny btn-increase">+</button>
+                <span class="servings-count" id="modalServings">18</span>
+                <span class="meta-label">SERVINGS</span>
+              </div>
+              <div class="cooking-time">
+                <span id="modalTime">30</span>
+                <span class="meta-label">MINUTES</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-right">
+            <div class="modal-img-box">
+              <img src="" alt="Recipe Image" id="modalImg" />
+            </div>
+            <div class="modal-header-bottom">
+              <h2 class="modal-title" id="modalTitle">PASTA SALAD WITH...</h2>
+              <div class="modal-actions">
+                <button
+                  class="btn-action btn-delete hidden"
+                  id="btnModalDelete"
+                  title="Delete Bookmark"
+                >
+                  <img src="img/trash.png" alt="Delete" />
+                </button>
+                <button
+                  class="btn-action btn-bookmark hidden"
+                  id="btnModalSave"
+                  title="Save to Bookmarks"
+                >
+                  <img src="img/bookmark.png" alt="Save" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
