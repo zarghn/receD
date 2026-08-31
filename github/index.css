@@ -20,9 +20,11 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
-  scroll-behavior: smooth;
   background: var(--bg);
   color: var(--text);
   width: 100%;

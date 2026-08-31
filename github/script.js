@@ -1,26 +1,13 @@
-const lenis = new Lenis();
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
-
-document.querySelectorAll('.nav-links a[href^="#"]').forEach(function (link) {
-  link.addEventListener("click", function (event) {
-    let targetId = this.getAttribute("href");
-    if (targetId === "#" || targetId.length < 2) return;
-    let target = document.querySelector(targetId);
-    if (!target) return;
-    event.preventDefault();
-
-    lenis.scrollTo(target, {
-      duration: 1.2,
-
-      easing: (t) =>
-        t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
-    });
-  });
-});
 
 let recipeModal = document.querySelector("#recipeModal");
 let modalImg = document.querySelector("#modalImg");
