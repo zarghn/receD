@@ -13,24 +13,12 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(function (link) {
     if (!target) return;
     event.preventDefault();
 
-    let startY = window.scrollY;
-    let endY = target.getBoundingClientRect().top + window.scrollY;
-    let duration = 900;
-    let startTime = null;
+    lenis.scrollTo(target, {
+      duration: 1.2,
 
-    function easeInOutCubic(t) {
-      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    }
-
-    function step(currentTime) {
-      if (!startTime) startTime = currentTime;
-      let elapsed = currentTime - startTime;
-      let progress = Math.min(elapsed / duration, 1);
-      window.scrollTo(0, startY + (endY - startY) * easeInOutCubic(progress));
-      if (progress < 1) requestAnimationFrame(step);
-    }
-
-    requestAnimationFrame(step);
+      easing: (t) =>
+        t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+    });
   });
 });
 
