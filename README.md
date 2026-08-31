@@ -8,10 +8,9 @@ This project was built as a learning project to practice JavaScript, fetch/async
 
 ---
 
-## 📱 Project Preview
+## <h3 align="center">📱 Project Preview</h3>
 
-![Uploading fullpage.png…]()
-
+<p align="center"> <img width="50%" alt="receD - home" src="[PUT_YOUR_IMAGE_LINK_HERE](https://github.com/user-attachments/assets/a512bbe4-7224-4c34-8e11-6e33e7392633)" /> <img width="50%" alt="receD - recipe modal" src="[PUT_YOUR_IMAGE_LINK_HERE](https://github.com/user-attachments/assets/08d7a4f0-88b1-49cc-be69-6059fe0316c4)" /> </p>
 ## ✨ Features
 
 ### 🔍 Recipe Search
