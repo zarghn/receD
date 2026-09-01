@@ -76,7 +76,7 @@ section.show {
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  background: url("img/bg.jpg") center/cover no-repeat fixed;
+  background: url("img/bg.jpg") center/cover no-repeat;
   box-sizing: border-box;
 }
 
@@ -777,7 +777,6 @@ section {
   min-height: 100vh;
   padding: 80px 0 80px;
   background-image: url("img/contact.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
